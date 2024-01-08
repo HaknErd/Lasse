@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #262626;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin: 20px;
+  cursor: pointer;
+  min-height: calc(50vw / 25vh + 200px);
+  height: calc(50vw / 20vh + 200px);
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+.card:hover {
+  transform: scale(1.01);
+  z-index: 5;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  padding-bottom: 16px;
+  position: relative;
+  margin-bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0),
+    rgba(26, 26, 26, 0.5) 10%,
+    rgb(38, 38, 38) 50%
+  );
+  margin-top: calc(-70%);
+  height: 50%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+  .card-content {
+    margin-top: calc(-60%);
+    height: 60%;
+    margin-bottom: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-content {
+    margin-top: calc(-50%);
+    height: 60%;
+    margin-bottom: 30%;
+  }
+}
+
+.card-content h2,
+.card-content p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+p {
+  color: #ccc;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 100%;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+#KanyeIn3d {
+  margin: 20px;
+  width: 100%;
+  height: 60vh;
+  position: sticky;
+  z-index: 2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  background-color: #262626;
+}
+
+#Video {
+  max-height: 120%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: invert(100%) 3px inset;
+  background-color: #262626;
+  transition: all ease 100ms;
+}
+
+#KanyeIn3d:hover {
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card#Yitler {
+  background-color: #262626;
+}
+
+.card#Yitler .card-content {
+  margin-top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0),
+    rgba(26, 26, 26, 0.7) 20%,
+    rgb(38, 38, 38) 50%
+  );
+  height: 100%;
+  margin-top: -30%;
+}
