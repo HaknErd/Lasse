@@ -4,33 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanye West</title>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #1a1a1a;
+        color: #fff;
+        min-height: 100vh;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .card {
+        position: relative;
+        background-color: #262626;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        margin: 20px;
+        cursor: pointer;
+        width: calc(50% - 40px);
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media (max-width: 700px) {
+        .card {
+          width: calc(100% - 40px);
         }
       }
-    </script>
-    <script type="module" src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+
+      .card:hover {
+        transform: scale(1.02);
+        z-index: 5;
+      }
+
+      /* Background images for each card */
+      .card:nth-child(1) {
+        background-image: url("https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg");
+      }
+
+      .card:nth-child(3) {
+        background-image: url("https://assets.vogue.com/photos/633a6cf9e15addd21b68038a/1:1/w_1999,h_1999,c_limit/Kanye%20West%20Paris%20Couture%20FW21%20Shows%20Photographed%20by%20Acielle%20_%20Styledumonde.jpeg");
+      }
+
+      .card:nth-child(4) {
+        background-image: url("https://img.lemde.fr/2022/12/02/3/0/2066/1377/1440/960/60/0/a460b4e_1669995510739-kanye-west.jpg");
+      }
+
+      .card:nth-child(2) {
+        background-image: url("https://imageio.forbes.com/specials-images/imageserve/61b755bf6b59fe1609e84010/48th-Annual-Grammy-Awards---Press-Room/960x0.jpg?format=jpg&width=960");
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        background: cover no-repeat center;
+        width: 30vw;
+        height: 30vw;
+      }
+      .content {
+        height: 50%;
+        padding: 20px;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.8) 30%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #f39c12;
+      }
+
+      p {
+        color: #ccc;
+        line-height: 1.2;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        height: 100%;
+      }
+
+      footer {
+        color: gainsboro;
+        font-size: 1.5rem;
+        margin-top: 20px;
+      }
+    </style>
   </head>
 
   <body>
     <main>
       <h1>Kanye West</h1>
       <div class="cards-container">
-        <div class="card" id="KanyeIn3d">
-          <video id="Video" playsinline>
-            <source src="./videos/goodmorning.mp4" type="video/mp4" />
-          </video>
-        </div>
         <div class="card">
-          <img
-            src="https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg"
-            alt="Albumcover von Kanye West"
-          />
-          <div class="card-content">
+          <div class="content">
             <h2>Innovativer Musiker</h2>
             <p>
               Kanye West ist ein äußerst einflussreicher und innovativer
@@ -41,11 +135,19 @@
           </div>
         </div>
         <div class="card">
-          <img
-            src="https://assets.vogue.com/photos/633a6cf9e15addd21b68038a/1:1/w_1999,h_1999,c_limit/Kanye%20West%20Paris%20Couture%20FW21%20Shows%20Photographed%20by%20Acielle%20_%20Styledumonde.jpeg"
-            alt="Albumcover von Kanye West"
-          />
-          <div class="card-content">
+          <div class="content">
+            <h2>Erfolg</h2>
+            <p>
+              Kanye erhielt insgesamt 24 Grammys, was ihn zu einem der
+              erfolgreichsten Musiker aller Zeiten macht. Insgesamt hat Kanye
+              West 11 Studioalben veröffentlicht. Von diesen wurden 32
+              Auszeichnungen vergeben, darunter 22 Platin- und 10
+              Goldauszeichnungen.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
             <h2>Modeikone</h2>
             <p>
               Über die Musik hinaus ist Kanye West ein Trendsetter in der
@@ -55,23 +157,21 @@
             </p>
           </div>
         </div>
-        <div class="card" id="Yitler">
-          <img
-            src="https://img.lemde.fr/2022/12/02/3/0/2066/1377/1440/960/60/0/a460b4e_1669995510739-kanye-west.jpg"
-            alt="Politisch motivierter Kanye"
-          />
-          <div class="card-content">
-            <h2>Politische Figur</h2>
+        <div class="card">
+          <div class="content">
+            <h2>Politische Figur und Metal</h2>
             <p>
-              Kanye West ist eine umstrittene politische Figur, mit seiner
-              Unterstützung für Donald Trump und seiner eigenen
-              Präsidentschaftskampagne. Allerdings hat er noch wichtiger gesagt,
-              dass er "Hitler liebt" und ihn für eine gute Person hält.
+              Kanye West, kontroverse politische Figur mit Unterstützung für
+              Trump und eigener Präsidentschaftskampagne, bekannt für
+              kontroverse Äußerungen wie die Zuneigung zu Hitler. Empörung und
+              Kritik folgten. Seine bipolare Störung beeinflusst möglicherweise
+              sein Verhalten und seine Aussagen.
             </p>
           </div>
         </div>
       </div>
-      <footer>Lasse 2023,2024</footer>
+
+      <footer>Lasse 2023, 2024</footer>
     </main>
   </body>
 </html>
