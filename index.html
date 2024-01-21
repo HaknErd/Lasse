@@ -5,172 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanye West</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Arial", sans-serif;
-        background-color: #1a1a1a;
-        color: #fff;
-        min-height: 100vh;
-      }
-
-      main {
-        position: relative;
-        z-index: 1;
-        padding: 40px;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-      .cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      .card {
-        position: relative;
-        background-color: #262626;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-        margin: 20px;
-        cursor: pointer;
-        width: calc(50% - 40px);
-        height: 40vh;
-        background-size: cover;
-        background-position: center;
-      }
-
-      @media (max-width: 700px) {
-        .card {
-          width: calc(100% - 40px);
-        }
-      }
-
-      .card:hover {
-        transform: scale(1.02);
-        z-index: 5;
-      }
-
-      /* Background images for each card */
-      .card:nth-child(1) {
-        background-image: url("https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg");
-      }
-
-      .card:nth-child(3) {
-        background-image: url("https://assets.vogue.com/photos/633a6cf9e15addd21b68038a/1:1/w_1999,h_1999,c_limit/Kanye%20West%20Paris%20Couture%20FW21%20Shows%20Photographed%20by%20Acielle%20_%20Styledumonde.jpeg");
-      }
-
-      .card:nth-child(4) {
-        background-image: url("https://img.lemde.fr/2022/12/02/3/0/2066/1377/1440/960/60/0/a460b4e_1669995510739-kanye-west.jpg");
-      }
-
-      .card:nth-child(2) {
-        background-image: url("https://imageio.forbes.com/specials-images/imageserve/61b755bf6b59fe1609e84010/48th-Annual-Grammy-Awards---Press-Room/960x0.jpg?format=jpg&width=960");
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        box-sizing: border-box;
-        background: cover no-repeat center;
-        width: 30vw;
-        height: 30vw;
-      }
-      .content {
-        height: 50%;
-        padding: 20px;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.8) 30%,
-          rgba(0, 0, 0, 0.8) 100%
-        );
-      }
-
-      h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        color: #f39c12;
-      }
-
-      p {
-        color: #ccc;
-        line-height: 1.2;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        height: 100%;
-      }
-
-      footer {
-        color: gainsboro;
-        font-size: 1.5rem;
-        margin-top: 20px;
-      }
-    </style>
   </head>
 
   <body>
     <main>
       <h1>Kanye West</h1>
       <div class="cards-container">
+        <!-- Card 1 -->
         <div class="card">
           <div class="content">
-            <h2>Innovativer Musiker</h2>
+            <h2>Biografie</h2>
             <p>
-              Kanye West ist ein äußerst einflussreicher und innovativer
-              Musiker, bekannt für das Überschreiten von Grenzen in der
-              Musikindustrie. Seine Diskografie umfasst bahnbrechende Alben wie
-              "My Beautiful Dark Twisted Fantasy" und "Yeezus."
+              Kanye Omari West wurde am 8. Juni 1977 in Atlanta, Georgia,
+              geboren. Er begann seine musikalische Karriere als Produzent,
+              bevor er als Rapper durchbrach. Sein Debütalbum "The College
+              Dropout" aus dem Jahr 2004 wurde sofort ein Erfolg und legte den
+              Grundstein für eine einzigartige Karriere.
+            </p>
+            <p>
+              Neben seiner Musik ist Kanye auch als Produzent und Modedesigner
+              tätig. Sein kreativer Einfluss erstreckt sich über verschiedene
+              Branchen, und er hat mehrere Auszeichnungen für seine
+              Vielseitigkeit erhalten.
             </p>
           </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2>Erfolg</h2>
-            <p>
-              Kanye erhielt insgesamt 24 Grammys, was ihn zu einem der
-              erfolgreichsten Musiker aller Zeiten macht. Insgesamt hat Kanye
-              West 11 Studioalben veröffentlicht. Von diesen wurden 32
-              Auszeichnungen vergeben, darunter 22 Platin- und 10
-              Goldauszeichnungen.
-            </p>
+          <div class="image-container">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg/640px-Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg"
+              alt="Biografie Image"
+            />
           </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="card">
           <div class="content">
-            <h2>Modeikone</h2>
+            <h2>Album-Diskografie</h2>
             <p>
-              Über die Musik hinaus ist Kanye West ein Trendsetter in der
-              Modewelt. Seine Marke YEEZY hat weltweite Anerkennung erlangt, und
-              er hat mit großen Modehäusern zusammengearbeitet, wodurch er einen
-              erheblichen Einfluss auf die Branche hinterlassen hat.
+              Kanye West hat im Laufe seiner Karriere 11 Studioalben
+              veröffentlicht. Hier sind einige seiner herausragenden Alben:
             </p>
+            <ul>
+              <li><strong>The College Dropout</strong> (2004)</li>
+              <li><strong>Late Registration</strong> (2005)</li>
+              <li><strong>Graduation</strong> (2007)</li>
+              <li><strong>808s & Heartbreak</strong> (2008)</li>
+              <li><strong>My Beautiful Dark Twisted Fantasy</strong> (2010)</li>
+              <li><strong>Watch the Throne (Deluxe)</strong> (2011)</li>
+              <li><strong>Yeezus</strong> (2013)</li>
+              <li><strong>The Life of Pablo</strong> (2016)</li>
+              <li><strong>ye</strong> (2018)</li>
+              <li><strong>KIDS SEE GHOSTS</strong> (2018)</li>
+              <li><strong>JESUS IS KING</strong> (2019)</li>
+              <li><strong>Donda</strong> (2021)</li>
+            </ul>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://i.redd.it/ags0bd4kk5j81.jpg"
+              alt="Diskografie Image"
+            />
           </div>
         </div>
+
+        <!-- Card 3 -->
         <div class="card">
           <div class="content">
-            <h2>Politische Figur und Metal</h2>
+            <h2>Auszeichnungen und Erfolge</h2>
             <p>
-              Kanye West, kontroverse politische Figur mit Unterstützung für
-              Trump und eigener Präsidentschaftskampagne, bekannt für
-              kontroverse Äußerungen wie die Zuneigung zu Hitler. Empörung und
-              Kritik folgten. Seine bipolare Störung beeinflusst möglicherweise
-              sein Verhalten und seine Aussagen.
+              Kanye West hat im Laufe seiner Karriere zahlreiche Auszeichnungen
+              erhalten, darunter 24 Grammy Awards. Sein Album "My Beautiful Dark
+              Twisted Fantasy" wurde von Kritikern hoch gelobt und als eines der
+              besten Alben des Jahrzehnts bezeichnet.
             </p>
+            <p>
+              Neben den Grammys hat Kanye auch Auszeichnungen für seine
+              künstlerischen Leistungen in der Modebranche erhalten,
+              insbesondere für die YEEZY-Marke.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/61b755bf6b59fe1609e84010/48th-Annual-Grammy-Awards---Press-Room/960x0.jpg?format=jpg&width=960"
+              alt="Auszeichnungen Image"
+              class="obp-70"
+            />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="content">
+            <h2>Neuste Single: DONDA</h2>
+            <p>
+              Kanye West hat am 29. August 2021 sein neues Album "Donda"
+              veröffentlicht. Die Single war Errinnerung an seine verstorbene
+              Mutter, nach der das Album benannt wurde.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F10%2Fkanye-west-donda-deluxe-apple-music-reports-000.jpg?w=960&cbr=1&q=90&fit=max"
+              alt="Donda Image"
+            />
+          </div>
+        </div>
+        <hr />
+        <h1>Kontroversen</h1>
+        <div class="card">
+          <div class="content">
+            <h2>Antisemitismus, Holocaustrelativierung, usw.</h2>
+            <p>
+              Bei einem viral gegangenen Auftritt in der US-amerikanischen
+              rechtsextremen Talkshow, die auch in vielen Teilen öffentlich
+              nicht ausgestrahlt wird, "Info Wars", des
+              Verschwörungstheoretikers Alex Jones, sagte Kanye West, dass er
+              "Gutes in Hitler sehe". <br />Insgesamt war der Auftritt von Kanye
+              West in der Show sehr kontrovers und sorgte für viel Aufsehen in
+              den Medien. Insgesamt waren die Aussagen sehr widersprüchlich und
+              verwirrend, da das eine nicht mit dem anderen zusammenpasste.
+            </p>
+            <p>
+              Wegen dieses Auftritts wurde Kanye West von vielen Medien als
+              Antisemit bezeichnet und verlor viele Modepartner, die mit ihm
+              zusammenarbeiteten. Daraufhin fällt es ihm aktuell schwer, ein
+              Label zu finden, das sein neues Album veröffentlichen möchte.
+            </p>
+          </div>
+          <div class="image-container">
+            <img
+              src="https://i.ytimg.com/vi/t86V-1dmS6k/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBh2ezZyquqGA-gYXQYXhZoY_6xTg"
+              alt="Info Wars Image"
+              class="obp-55"
+            />
           </div>
         </div>
       </div>
-
       <footer>Lasse 2023, 2024</footer>
     </main>
   </body>
